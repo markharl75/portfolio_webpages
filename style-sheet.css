@@ -4,10 +4,11 @@ body {margin:0;}
   overflow: hidden;
   font-family:"Poppins",verdana;
   font-weight:500;
-  background-color: #8d2929;
+  background-color: #742525;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index:1;
 }
 
 .navbar a {
@@ -18,11 +19,13 @@ body {margin:0;}
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  
 }
 
 .navbar a:hover {
   background: #3d343d;
   color: white;
+  
 }
 
 
@@ -49,10 +52,11 @@ body {margin:0;}
 .projects-page{
     display:grid;
     
-    width:100%;
-    height:100%;
+ 
+    min-height:100vh;
     background-color:rgb(54, 83, 83);
     margin-top:0;
+    
     
 }
 
@@ -72,16 +76,16 @@ body {margin:0;}
 
 
 .card {
-    display:flex;
-    border: 1px solid #e7e7e7;
+    
+    border: 1px solid rgba(0, 0, 73, 0.24);
     border-radius: 20px;
+    position:relative;
     
-    
-    height:300px;
+    height:400px;
     width:300px;
 
     min-width:300px;
-    min-height:300px;
+    min-height:400px;
     max-width:300px;
 
     
@@ -90,10 +94,11 @@ body {margin:0;}
  
     overflow:hidden;
     
-    padding: .5rem;
-    margin-bottom: 30px;
+    
+    margin-bottom: 100px;
     margin-left:10px;
     margin-right:10px;
+    
     
     
     
@@ -101,10 +106,19 @@ body {margin:0;}
 
 .card-text{
     font-family: "Raleway", sans-serif;
-    display: flex;
-    justify-content: flex;
-    align-items: flex-end;
-    height:3rem;
+    justify-content:flex;
+    color:white;
+    text-align:justify;
+    
+
+    padding:.5em;
+    height:100px;
+    width:300px;
+    background-color: rgba(0, 0, 73, 0.24);
+    position:absolute;
+    bottom:0;
+
+    
     
 }
 
@@ -116,8 +130,8 @@ body {margin:0;}
     height:100vh;
     background-color:rgb(54, 83, 83);
     margin-top:0;
-    background-image: linear-gradient(62deg, #423636 0%, #181719 100%);
     scroll-behavior: smooth;
+    background-color:rgb(29, 29, 29)
 
 }
 
@@ -145,5 +159,5 @@ h2{
     padding-top:60px;
     margin-right:auto;
     margin-left:auto;
-    margin-bottom:70px;
+    margin-bottom:60px;
 }
