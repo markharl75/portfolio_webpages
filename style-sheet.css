@@ -99,7 +99,7 @@ body {margin:0;}
     margin-left:10px;
     margin-right:10px;
     
-    
+          
     
     
 }
@@ -108,7 +108,7 @@ body {margin:0;}
     font-family: "Raleway", sans-serif;
     justify-content:flex;
     color:white;
-    text-align:justify;
+    text-align:auto;
 
     padding:.5em;
     height:100px;
