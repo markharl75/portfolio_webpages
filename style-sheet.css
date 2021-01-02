@@ -81,11 +81,11 @@ body {margin:0;}
     border-radius: 20px;
     position:relative;
     
-    height:400px;
+    height:410px;
     width:300px;
 
     min-width:300px;
-    min-height:400px;
+    min-height:410px;
     max-width:300px;
 
     
@@ -111,7 +111,7 @@ body {margin:0;}
     text-align:auto;
 
     padding:.5em;
-    height:100px;
+    height:110px;
     width:auto;
     background-color: rgba(0, 0, 73, 0.24);
     position:absolute;
@@ -159,4 +159,17 @@ h2{
     margin-right:auto;
     margin-left:auto;
     margin-bottom:60px;
+}
+
+h3{
+    font-family:"Poppins", sans-serif;
+    padding-left:auto;
+    padding-right:auto;
+    margin-bottom:3px;
+    margin-top:0;
+    text-align: center;
+    color:whitesmoke;
+    border-bottom: 1px solid #aaa;
+    padding-bottom:2px;
+    
 }
