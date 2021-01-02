@@ -109,11 +109,10 @@ body {margin:0;}
     justify-content:flex;
     color:white;
     text-align:justify;
-    
 
     padding:.5em;
     height:100px;
-    width:300px;
+    width:auto;
     background-color: rgba(0, 0, 73, 0.24);
     position:absolute;
     bottom:0;
