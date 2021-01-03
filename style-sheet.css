@@ -50,12 +50,12 @@ body {margin:0;}
 .projects-page{
     display:grid;
     
-    min-height:100vh;
+    min-height:100%;
     background-color:#45567D;
     margin-top:0;
 }
 
-.card-grid{
+/*.card-grid{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
@@ -64,69 +64,82 @@ body {margin:0;}
     padding-right:30px;
     
 
+}*/
+
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  
+  grid-gap: 50px;
+
+  padding-left:50px;
+  padding-right:50px;
+  padding-bottom:30vh;
+  padding-top:10vh;
 }
 
 /* IF BROWSER SMALLER THAN max-width; RUNS THIS CODE*/
-@media screen and (max-width: 1800px){
+@media screen and (max-width: 1600px){
     .card-grid{
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        row-gap:-10px;
-        padding-top:30px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        
+        grid-gap: 50px;
 
-        /*Take padding away if I ever want to make cards size dynamically*/
-        padding-left:10vw;
-        padding-right:10vw;
+        padding-left:50px;
+        padding-right:50px;
+        padding-bottom:100px;
     }
 }
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 800px){
     .card-grid{
-        display:grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        grid-gap:30px;
-        left:auto;
-        right:auto;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+  
+        grid-gap: 50px;
+
+        padding-left:50px;
+        padding-right:50px;
+        padding-bottom:100px;
     }
 }
  
 .card {
     border-radius: 4px;
-    /*background-color: black;*/
     background-color:#172E5C;
-    background-image:url("https://www.academyadmissions.com/wp-content/themes/afa/img/icons/questionmark.svg");
+    
 
+    display: flex;
     position:relative;
     
-    
-    width:400px;
-    height:510px;
-    
-
-
-    margin-bottom: 100px;
-    
 }
 
-.card a {
-    background-color: auto;
-}
+.card:before {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    padding-bottom: calc(1/1 * 100%);
+  }
+
+
 
 .card-text{
     font-family: "Raleway", sans-serif;
     color:white;
     background-color: rgb(29, 29, 29);
-    height:6rem;
-    width:auto;
+    height:2em;
+    width:100%;
     text-align:auto;
-    bottom:0;
-    padding:.5em;
+    position: absolute;
+    bottom: 0;
+    padding-bottom:5px;
+    padding-top:5px;
 
-    position:absolute;
     
-    justify-content:flex; 
+    
+    
 }
 
 
@@ -181,11 +194,11 @@ h3{
     font-family:"Poppins", sans-serif;
     padding-left:auto;
     padding-right:auto;
-    margin-bottom:3px;
+    margin-bottom:7px;
     margin-top:0;
     text-align: center;
     color:whitesmoke;
-    border-bottom: 1px solid #aaa;
+    
     padding-bottom:1px;
     
 }
