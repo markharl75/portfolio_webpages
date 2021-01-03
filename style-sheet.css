@@ -25,7 +25,6 @@ body {margin:0;}
 .navbar a:hover {
   background: #3d343d;
   color: white;
-  
 }
 
 
@@ -41,7 +40,6 @@ body {margin:0;}
     color:#f0f0f0;
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     margin-bottom:0;
-    
 }
 
 
@@ -55,84 +53,59 @@ body {margin:0;}
     min-height:100vh;
     background-color:#45567D;
     margin-top:0;
-    
-    
 }
 
-
-
-.cards-flex{
-    
+/*.cards-flex{
     flex-direction:row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    
     position:relative;
     display:flex;
-    flex-flow: row wrap;
+}*/
 
-    
-    
-    
+.card-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
  
-
-
 .card {
-    
-    border: 1px solid #742525;
-    border-radius: 10px;
+    border-radius: 4px;
+    /*background-color: black;*/
+    background-color:#172E5C;
+    background-image:url("https://www.academyadmissions.com/wp-content/themes/afa/img/icons/questionmark.svg");
+
     position:relative;
     
     height:410px;
     width:300px;
-
     min-width:300px;
     min-height:410px;
     max-width:300px;
 
-
-    background-color: black;
-    /*background-color:#172E5C;
-    background-image:url("https://www.academyadmissions.com/wp-content/themes/afa/img/icons/questionmark.svg");*/
-
-    
-    
-    
-    flex: 0 0 33.33333%;
- 
-    overflow:hidden;
-    
-    
     margin-bottom: 100px;
     margin-right:10px;
     margin-left:10px;
-    
-    
-          
-    
-    
 }
 
 .card-text{
     font-family: "Raleway", sans-serif;
-    justify-content:flex;
     color:white;
-    text-align:auto;
-
-    padding:.5em;
+    background-color: rgb(29, 29, 29);
     height:110px;
     width:auto;
-    background-color: #742525;
-    position:absolute;
+    text-align:auto;
     bottom:0;
+    padding:.5em;
 
+    position:absolute;
     
-    
+    justify-content:flex; 
 }
 
 
+
 /* CONTACT PAGE */
+
 .contact-page{    
     display:grid;
     width:100%;
@@ -143,6 +116,7 @@ body {margin:0;}
     background-color:rgb(29, 29, 29)
 
 }
+
 
 
 /* FORMAT SPECIFIERS */
