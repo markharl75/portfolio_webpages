@@ -52,9 +52,8 @@ body {margin:0;}
 .projects-page{
     display:grid;
     
- 
     min-height:100vh;
-    background-color:rgb(54, 83, 83);
+    background-color:#9B837E;
     margin-top:0;
     
     
@@ -77,8 +76,8 @@ body {margin:0;}
 
 .card {
     
-    border: 1px solid rgba(0, 0, 73, 0.24);
-    border-radius: 20px;
+    border: 1px solid #742525;
+    border-radius: 10px;
     position:relative;
     
     height:410px;
@@ -88,6 +87,10 @@ body {margin:0;}
     min-height:410px;
     max-width:300px;
 
+    background-color:#172E5C;
+    background-image:url("https://www.academyadmissions.com/wp-content/themes/afa/img/icons/questionmark.svg");
+
+    
     
     
     flex: 0 0 33.33333%;
@@ -96,8 +99,9 @@ body {margin:0;}
     
     
     margin-bottom: 100px;
-    margin-left:10px;
     margin-right:10px;
+    margin-left:10px;
+    
     
           
     
@@ -113,7 +117,7 @@ body {margin:0;}
     padding:.5em;
     height:110px;
     width:auto;
-    background-color: rgba(0, 0, 73, 0.24);
+    background-color: #742525;
     position:absolute;
     bottom:0;
 
@@ -147,18 +151,21 @@ h1{
 p{
     font-family:"Poppins", sans-serif;
     font-size:20px;
-    color:#8d2929;
+    color:#b44141;
     margin-top:0;
 }
 
 h2{
     font-family:"Raleway", sans-serif;
     font-size: 50px;
-    color:whitesmoke;
+    COLOR:whitesmoke;
     padding-top:60px;
     margin-right:auto;
     margin-left:auto;
     margin-bottom:60px;
+    
+
+    
 }
 
 h3{
@@ -170,6 +177,6 @@ h3{
     text-align: center;
     color:whitesmoke;
     border-bottom: 1px solid #aaa;
-    padding-bottom:2px;
+    padding-bottom:1px;
     
 }
