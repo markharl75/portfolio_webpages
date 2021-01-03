@@ -67,7 +67,7 @@ body {margin:0;}
 }
 
 /* IF BROWSER SMALLER THAN max-width; RUNS THIS CODE*/
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1800px){
     .card-grid{
         display:grid;
         grid-template-columns: 1fr 1fr;
@@ -76,12 +76,12 @@ body {margin:0;}
         padding-top:30px;
 
         /*Take padding away if I ever want to make cards size dynamically*/
-        padding-left:12vw;
-        padding-right:12vw;
+        padding-left:10vw;
+        padding-right:10vw;
     }
 }
 
-@media screen and (max-width: 930px){
+@media screen and (max-width: 1300px){
     .card-grid{
         display:grid;
         grid-template-columns: 1fr;
@@ -101,8 +101,8 @@ body {margin:0;}
     position:relative;
     
     
-    width:300px;
-    height:410px;
+    width:400px;
+    height:510px;
     
 
 
@@ -118,7 +118,7 @@ body {margin:0;}
     font-family: "Raleway", sans-serif;
     color:white;
     background-color: rgb(29, 29, 29);
-    height:110px;
+    height:6rem;
     width:auto;
     text-align:auto;
     bottom:0;
