@@ -55,17 +55,41 @@ body {margin:0;}
     margin-top:0;
 }
 
-/*.cards-flex{
-    flex-direction:row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    position:relative;
-    display:flex;
-}*/
-
 .card-grid{
     display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap:30px;
+    padding-left:30px;
+    padding-right:30px;
+    
+
+}
+
+/* IF BROWSER SMALLER THAN max-width; RUNS THIS CODE*/
+@media screen and (max-width: 1500px){
+    .card-grid{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        row-gap:-10px;
+        padding-top:30px;
+
+        /*Take padding away if I ever want to make cards size dynamically*/
+        padding-left:12vw;
+        padding-right:12vw;
+    }
+}
+
+@media screen and (max-width: 930px){
+    .card-grid{
+        display:grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-gap:30px;
+        left:auto;
+        right:auto;
+    }
 }
  
 .card {
@@ -76,15 +100,18 @@ body {margin:0;}
 
     position:relative;
     
-    height:410px;
+    
     width:300px;
-    min-width:300px;
-    min-height:410px;
-    max-width:300px;
+    height:410px;
+    
+
 
     margin-bottom: 100px;
-    margin-right:10px;
-    margin-left:10px;
+    
+}
+
+.card a {
+    background-color: auto;
 }
 
 .card-text{
@@ -101,6 +128,8 @@ body {margin:0;}
     
     justify-content:flex; 
 }
+
+
 
 
 
