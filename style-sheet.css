@@ -20,11 +20,15 @@ body {margin:0;}
   text-decoration: none;
   font-size: 17px;
   
+  
 }
 
 .navbar a:hover {
   background: #3d343d;
   color: white;
+  transition:.3s;
+    -webkit-transition:.3s;
+    -moz-transition:.3s;
 }
 
 
@@ -62,8 +66,7 @@ body {margin:0;}
 
   padding-left:50px;
   padding-right:50px;
-  padding-top:5vh;
-  padding-bottom:5vh;
+  
 }
 
 /* IF BROWSER SMALLER THAN max-width; RUNS THIS CODE*/
@@ -91,8 +94,29 @@ body {margin:0;}
         padding-right:50px;
         
     }
+    
+    .projects-header{
+        font-size:30px;
+    }
+
 }
- 
+
+.projects-header{
+    font-family:"Raleway", sans-serif;
+    font-size: 40px;
+    COLOR:whitesmoke;
+    padding-top:4rem;
+    padding-bottom:1.2rem;
+    
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:4rem;
+    
+    
+    border-bottom:solid;
+    border-width:1px;
+}
+
 .card {
     border-radius: 4px;
     /*background-color:#172E5C;*/
@@ -155,12 +179,12 @@ body {margin:0;}
     width:120px;
     border-radius:4px;
 
-    margin-top:15px;
-    margin-bottom:15vh;
+    margin-top:1.5rem;
+    margin-bottom:5rem;
     margin-left:auto;
     margin-right:auto;
 
-   padding-left:.32rem;
+    padding-left:.32rem;
 
     display: flex;
     justify-content: center;
@@ -178,7 +202,7 @@ body {margin:0;}
 
 .view-all-button:hover .gg-chevron-right{
 
-    transform: translate(5px, 0px);
+    transform: translate(.35rem, 0px);
 
     transition:.4s;
     -webkit-transition:.4s;
@@ -218,27 +242,6 @@ body {margin:0;}
     border: 2px solid transparent;
 }
 
-.gg-chevron-left::after {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-bottom: 2px solid;
-    border-right: 2px solid;
-    transform: rotate(-225deg);
-    top: 4px;
-}
-
-.view-all-button:hover .gg-chevron-left{
-
-    transform: translate(-5px, 0px);
-
-    transition:.4s;
-    -webkit-transition:.4s;
-    -moz-transition:.4s;
-}
 
 
 
@@ -255,13 +258,15 @@ body {margin:0;}
 .contact-page{    
     display:grid;
     width:100%;
-    height:100vh;
+    height:95vh;
     background-color:rgb(54, 83, 83);
     margin-top:0;
     scroll-behavior: smooth;
     background-color:rgb(29, 29, 29)
 
 }
+
+
 
 
 
@@ -289,12 +294,18 @@ p{
 
 h2{
     font-family:"Raleway", sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     COLOR:whitesmoke;
-    padding-top:60px;
+    padding-top:4rem;
+    padding-bottom:1.2rem;
+    
     margin-right:auto;
     margin-left:auto;
-    margin-bottom:60px;
+    margin-bottom:4rem;
+    
+    
+    border-bottom:solid;
+    border-width:1px;
     
 
     
@@ -310,5 +321,17 @@ h3{
     color:whitesmoke;
     
     padding-bottom:1px;
+    
+}
+
+h4{
+    font-family:"Raleway", sans-serif;
+    font-size: 50px;
+    COLOR:whitesmoke;
+    padding-top:60px;
+    margin-right:auto;
+    margin-left:auto;
+    padding-bottom:60px;
+    
     
 }
