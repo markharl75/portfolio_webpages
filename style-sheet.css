@@ -138,36 +138,28 @@ body {margin:0;}
 /*View button functionality*/
 .view-all-button{
     background-color: rgb(29, 29, 29);
-    font-size:17px;
     color:white;
+    font-size:17px;
     font-family:"Raleway", sans-serif;
+
     height:40px;
     width:120px;
     border-radius:4px;
 
     margin-top:15px;
     margin-bottom:15vh;
-
-
     margin-left:auto;
     margin-right:auto;
 
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-
-.view-all-button:hover a{
-    display:none;
     
+    content:"View All";
 }
 
-.view-all-button:hover:before{
-    color:#ff7728;
-    content:"< View All >";
-    /*TODO: MAKE THIS CLICKABLE*/
+.view-all-button:hover{
+    background-color:#973232;
 }
 
 
