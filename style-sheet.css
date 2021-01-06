@@ -314,20 +314,29 @@ body {margin:0;}
 .icon-grid{
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+  grid-template-columns: repeat(auto-fit, minmax(70px, 70px));
   justify-content: center;
   align-items: center;
   padding-left:auto;
   padding-right:auto;
   margin-bottom:20px;
   width: 700px;
-  border-style: solid;
+  
 }
 
 .icon-grid>* {
-    background-color: green;
-    height: 100px;
+    border-radius: 100%;
+    background-color: rgb(37, 37, 37);
+    height: 70px;
   }
+
+.icon-grid>*:hover{
+    transform: translate(0px, .35rem);
+
+    transition:.4s;
+    -webkit-transition:.4s;
+    -moz-transition:.4s;
+}
 
 
 
