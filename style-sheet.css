@@ -142,6 +142,10 @@ body {margin:0;}
         -webkit-transition:.4s;
         -moz-transition:.4s;
     }
+
+    .icon-grid{
+        grid-template-columns: repeat(1, minmax(70px, 70px));
+    }
 }
 
 
@@ -326,9 +330,16 @@ body {margin:0;}
 
 .icon-grid>* {
     border-radius: 100%;
-    background-color: rgb(37, 37, 37);
+    
+    
     height: 70px;
+    width:70px;
   }
+
+img{
+    width:100%;
+    height:100%;
+}
 
 .icon-grid>*:hover{
     transform: translate(0px, .35rem);
