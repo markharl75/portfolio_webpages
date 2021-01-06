@@ -91,64 +91,6 @@ body {margin:0;}
   
 }
 
-/* IF BROWSER SMALLER THAN max-width; RUNS THIS CODE*/
-/*@media screen and (max-width: 1100px){
-    .card-grid{
-        display: grid;
-        grid-template-columns: repeat(2, minmax(300px, 500px));
-        
-        grid-gap: 20px;
-
-        padding-left:50px;
-        padding-right:50px;
-        
-    }
-}*/
-
-@media screen and (max-width: 700px){
-    .card-grid{
-        display: grid;
-        grid-template-columns: repeat(1, minmax(10px, 570px));
-
-        
-  
-        grid-gap: 20px;
-
-        padding-left:50px;
-        padding-right:50px;
-        
-    }
-    
-    
-
-}
-
-
-@media screen and (max-width: 575px){
-    .projects-header{
-        font-size:30px;
-        padding-top:4.75rem;
-        transition:.4s;
-        -webkit-transition:.4s;
-        -moz-transition:.4s;
-    }
-}
-
-@media screen and (min-width: 575px){
-    .projects-header{
-        font-size:40px;
-        padding-top:4rem;
-        transition:.4s;
-        -webkit-transition:.4s;
-        -moz-transition:.4s;
-    }
-
-    .icon-grid{
-        grid-template-columns: repeat(1, minmax(70px, 70px));
-    }
-}
-
-
 
 .card {
     border-radius: 4px;
@@ -301,31 +243,19 @@ body {margin:0;}
 
 }
 
-/*.icon-grid{
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, 186px);
-
-    height:5rem;
-    
-    margin-left: 10rem;
-    margin-right: 10rem;
-    margin-bottom: 14rem;
-
-    border-style:solid;
-}*/
-
 .icon-grid{
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(70px, 70px));
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    grid-gap: 10px;
   padding-left:auto;
   padding-right:auto;
   margin-bottom:20px;
-  width: 700px;
+  width: 100%;
+
   
+
 }
 
 .icon-grid>* {
@@ -333,8 +263,12 @@ body {margin:0;}
     
     
     height: 70px;
-    width:70px;
+    width: 70px;
   }
+
+  
+
+
 
 img{
     width:100%;
@@ -387,6 +321,7 @@ p{
     color:white;
     position: relative;
     top:0;
+    padding-top:3px;
 
 }
 
@@ -445,3 +380,38 @@ h4{
     padding-top:0;
     padding-bottom:0;
 }
+
+
+
+@media screen and (max-width: 575px){
+    h4{
+        font-size:30px;
+    }
+
+    .projects-header{
+        font-size:30px;
+        padding-top:4.75rem;
+        
+    }
+
+    .icon-grid>* {
+        border-radius: 100%;
+        
+        
+        height: 50px;
+        width: 50px;
+      }
+
+}
+@media screen and (max-width: 700px){
+    .card-grid{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(10px, 570px));   
+  
+        grid-gap: 20px;
+
+        padding-left:50px;
+        padding-right:50px;   
+    }
+}
+
