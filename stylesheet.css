@@ -21,8 +21,6 @@ body {margin:0;}
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  
-  
 }
 
 .navbar a:hover {
@@ -388,5 +386,23 @@ h4{
         padding-left:50px;
         padding-right:50px;   
     }
+
+    
 }
 
+/*Media query for mobile resizing*/
+@media screen and (max-width: 400px){
+    h1{
+        font-size: 40px;
+    }
+
+    .projects-header{
+        font-size: 25px;
+    }
+
+    .card-text{
+        font-size:12px;
+    }
+
+
+}
