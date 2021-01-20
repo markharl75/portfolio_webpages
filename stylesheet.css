@@ -63,6 +63,7 @@ body {margin:0;}
 .projects-header{
     font-family:"Raleway", sans-serif;
     font-size: 40px;
+
     COLOR:whitesmoke;
     padding-top:4rem;
     padding-bottom:1.2rem;
@@ -205,15 +206,7 @@ body {margin:0;}
     top: 4px;
 }
 
-.gg-chevron-left {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs,1));
-    width: 15px;
-    height: 22px;
-    border: 2px solid transparent;
-}
+
 
 
 
@@ -331,24 +324,7 @@ p{
     
 }
 
-h2{
-    font-family:"Raleway", sans-serif;
-    font-size: 40px;
-    COLOR:whitesmoke;
-    padding-top:4rem;
-    padding-bottom:1.2rem;
-    
-    margin-right:auto;
-    margin-left:auto;
-    margin-bottom:4rem;
-    
-    
-    border-bottom:solid;
-    border-width:1px;
-    
 
-    
-}
 
 h3{
     font-family:"Poppins", sans-serif;
